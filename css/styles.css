@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+body {
+ font-family: 'Lato', sans-serif;
+}
+.breadcrumps {
+	padding: 0;
+	color: #555;
+}
+.breadcrumps li {
+	display: inline-block;
+	margin-right: 10px;
+} 
+.breadcrumps li:not(:last-child)::after {
+	content: '';
+	margin: 0 5px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../pic/right-chevron-.svg) no-repeat center;
+	background-size: contain;
+	opacity: .5;
+}
+
+
+.breadcrumps li a {
+	text-decoration: none;
+	color: #7a99f3;
+	transition: color .25s ease;
+}
+.breadcrumps li a:hover,
+.breadcrumps li a:focus,
+.breadcrumps li a:active {
+	color: #4963ad;
+}
+.circle {
+	width: 300px;
+	height: 300px;
+	font-size: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.sector {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+}
+.circle .sector:nth-child(1) {
+	background: #ad4960;
+	/* border-top-left-radius: 100%; */
+}
+.circle .sector:nth-child(2) {
+	background: #e3c01f;
+	/* border-top-right-radius: 100%; */
+}
+.circle .sector:nth-child(3) {
+	background: #3c8e10;
+	/* border-bottom-left-radius: 100%; */
+}
+.circle .sector:nth-child(4) {
+	background: #157bd2;
+	/* border-bottom-right-radius: 100%; */
+}
+.flower {
+	width: 300px;
+	height: 300px;
+	font-size: 0;
+	
+}
+.petal {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+}
+.flower .petal:nth-child(1) {
+	background: #ad4960;
+	border-radius: 60px 90px 0 90px;
+}
+.flower .petal:nth-child(2) {
+	background: #e3c01f;
+	border-radius: 90px 60px 90px 0;
+}
+.flower .petal:nth-child(3) {
+	background: #3c8e10;
+	border-radius: 90px 0 90px 60px;
+}
+.flower .petal:nth-child(4) {
+	background: #157bd2;
+	border-radius: 0 90px 60px 90px;
+}
+.links {
+	list-style-type: none;
+}
+
+.links li {
+	margin: 5px 0;
+}
+
+.links li a {
+	text-decoration: none;
+	color: #555;
+	padding-left: 30px;
+	opacity: .7;
+	transition: opacity: .25s ease;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+.links li a:hover,
+.links li a:focus,
+.links li a:active {
+	color: #157bd2;
+	opacity: 1;
+	
+
+}
+.links li a[target="_blank"]{
+	background-image: url(../pic/001-windows.svg);
+}
+.links li a[href^="http"] {
+	background-image: url(../pic/004-link.svg);
+}
+.links li a[href^="mailto:"] {
+	background-image: url(../pic/002-envelope.svg);
+}
+.links li a[href^="tel:"] {
+	background-image: url(../pic/003-smartphone.svg);
+}
+.links li a[href$=".pdf"] {
+	background-image: url(../pic/005-google-drive-pdf-file.svg);
+}
+
+.links li a[href$=".xls"],
+.links li a[href$=".xlsx"]
+ {
+	background-image: url(../pic/007-excel-file.svg);
+}
+
+.links li a[href$=".doc"],
+.links li a[href$=".docx"]
+ {
+	background-image: url(../pic/006-microsoft-word-logo.svg);
+}
